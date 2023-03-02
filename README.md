@@ -1,5 +1,10 @@
 # [Chromium Docs](https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md)
 
+> get profile info
+```
+chrome://version/
+```
+
 # Extensions 
 ## File Locations 
 Windows XP: C:\Documents and Settings\%USERNAME%\Local Settings\Application Data\Google\Chrome\User Data\Default\Extensions\<Extension ID>
