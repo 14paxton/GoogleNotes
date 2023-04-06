@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Rest Send event</title>
+    <meta name="description" content="Roughly 155 characters" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+    <script src="AddGoogleMessengerEvents.js"></script>
+  </head>
+
+  <!-- EVENT TO ADD TEXT -->
+  <script>
+    // Make sure the client is loaded and sign-in is complete before calling this method.
+    const initiateBot = () => {
+      return fetch(
+        "https://dialogflow.googleapis.com/v3beta1/projects/dialogflow-378918/locations/global/agents/6b645750-50d1-42bc-be58-cc8489cc2f24/sessions/this_is_a_session_id_123456:detectIntent?key=[YOUR_API_KEY] HTTP/1.1",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            "queryInput": {
+              "event": {
+                "event": "initiate-bot-event",
+              },
+              "languageCode": "en",
+            },
+            "queryParams": {
+              "timeZone": "America/Los_Angeles",
+            },
+          }),
+        }
+      )
+        .then((response) => response.json())
+        .then((response) => console.log(JSON.stringify(response)));
+    };
+
+    window.addEventListener("df-messenger-loaded", function (event) {
+      const dfMessenger = document.querySelector("df-messenger");
+      initiateBot();
+      console.log(event.target);
+    });
+  </script>
+  <!-- EVENT TO ADD TEXT -->
+
+  <body>
+    <div>
+      <h1>Test Chat</h1>
+    </div>
+
+    <!-- GOOGLE MESSENGER  -->
+    <df-messenger
+      df-cx="true"
+      chat-title="initiate-start-google-messenger"
+      agent-id="6b645750-50d1-42bc-be58-cc8489cc2f24"
+      language-code="en"
+      session-id="this_is_a_session_id_123456"
+    ></df-messenger>
+    <!-- GOOGLE MESSENGER  -->
+  </body>
+</html>
+initiate-bot-event
