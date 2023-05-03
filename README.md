@@ -30,6 +30,27 @@ Click Load Unpacked Extension....
 Find your copied directory and click Open.
 
 # CLI
+## Open
+
+```shell
+start chrome
+```
+
+### runas admin
+
+```shell
+runas /user:administrator "C:\Program Files (x86)\Google\Chrome\Application\Chrome.exe"
+```
+
+### incognito
+```shell
+start chrome /incognito
+```
+
+### at specific site
+```shell
+start chrome www.<websiteURL>.com
+```
 
 ## [Run With Switches](https://www.chromium.org/developers/how-tos/run-chromium-with-flags/)
 
