@@ -31,11 +31,14 @@ Find your copied directory and click Open.
 
 # CLI
 
-Windows
-Exit any running-instance of Chrome.
+## [Run With Switches](https://www.chromium.org/developers/how-tos/run-chromium-with-flags/)
+
+```
+ Exit any running-instance of Chrome.
 Right click on your "Chrome" shortcut.
 Choose properties.
 At the end of your "Target:" line add the command-line switch. For example:
 --disable-gpu-vsync
 With that example flag, it should look like below (replacing "--disable-gpu-vsync" with any other command-line switch you want to use): chrome.exe --disable-gpu-vsync
 Launch Chrome like normal with the shortcut.
+```
