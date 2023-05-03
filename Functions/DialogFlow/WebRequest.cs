@@ -12,7 +12,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 
 
-namespace Comm100API;
+namespace DialogFlow;
 
 public class Function : IHttpFunction {
     private readonly ILogger _log;
