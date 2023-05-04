@@ -63,3 +63,9 @@ At the end of your "Target:" line add the command-line switch. For example:
 With that example flag, it should look like below (replacing "--disable-gpu-vsync" with any other command-line switch you want to use): chrome.exe --disable-gpu-vsync
 Launch Chrome like normal with the shortcut.
 ```
+
+## Kill all instances
+
+```shell
+taskkill /F /IM "chrome.exe" /T
+```
