@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "a9c3ea51-fb09-4785-b4ce-42a1bb6b0ba3",
+		"name": "DialogFlowCX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25515917",
+		"_collection_link": "https://vcu-chat-bot.postman.co/workspace/Team-Workspace~6e2da2ae-51b3-41df-8479-97e4d62645f7/collection/25515917-a9c3ea51-fb09-4785-b4ce-42a1bb6b0ba3?action=share&creator=25515917&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "BrandonDevBot-InitiateBotEvent-UseDevEnv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"queryInput\":{\"event\":{\"event\":\"initiate-bot-event\"},\"languageCode\":\"en\"},\"queryParams\":{\"timeZone\":\"America/Los_Angeles\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/environments/ec5f3114-e5d6-497f-bf92-53723c698230/sessions/fjfjfj8383833:detectIntent",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"environments",
+						"ec5f3114-e5d6-497f-bf92-53723c698230",
+						"sessions",
+						"fjfjfj8383833:detectIntent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BrandonDevBot-ListAllEnvironments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/environments",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"environments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BrandonDevBot-ListAllVersions-DefaultFlow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/flows/00000000-0000-0000-0000-000000000000/versions",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"flows",
+						"00000000-0000-0000-0000-000000000000",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BrandonDevBot-ListAllPagesForFlow-GeneralFlow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/flows/7bf60f85-19fe-48bd-ac27-2b5db2cde4de",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"flows",
+						"7bf60f85-19fe-48bd-ac27-2b5db2cde4de"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "ya29.a0AWY7CklF8MQolWz-umfw9JbnbPHNQouWr_sK0WLaaq44pyFUROfNJtbkBNuDgcydoAUJLuEKm5YJ-q859noftvq5s5HyvapKD3jSQ92IWLQTnjkuagT0FOrTJ7_i5EXFLH1tX4cMbRDVScZz1Jwtcx_n8rjjp16R3O8vaCgYKAS4SARISFQG1tDrpznsJlLv7Nj3nrXHZGCIf1w0171",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
