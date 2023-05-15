@@ -29,7 +29,7 @@ Make sure Developer Mode is checked.
 Click Load Unpacked Extension....
 Find your copied directory and click Open.
 
-# CLI
+# [CLI](https://www.chromium.org/developers/how-tos/run-chromium-with-flags/)
 
 ## Open
 
