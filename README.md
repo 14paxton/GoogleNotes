@@ -71,7 +71,7 @@ With that example flag, it should look like below (replacing "--disable-gpu-vsyn
 Launch Chrome like normal with the shortcut.
 ```
 
-### Some Switches 
+### [Some Switches ](https://peter.sh/experiments/chromium-command-line-switches/)
  
 | Chromium Command            	| Description                                                         	|
 |-----------------------------	|---------------------------------------------------------------------	|
