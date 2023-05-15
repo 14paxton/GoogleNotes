@@ -37,6 +37,12 @@ Find your copied directory and click Open.
 start chrome
 ```
 
+### open no address bar
+
+```shell
+ start chrome --app="http://www.youtube.com/"
+```
+ 
 ## Kill all instances
 
 ```shell
