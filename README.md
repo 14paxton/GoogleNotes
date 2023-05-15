@@ -30,12 +30,19 @@ Click Load Unpacked Extension....
 Find your copied directory and click Open.
 
 # CLI
+
 ## Open
 
 ```shell
 start chrome
 ```
 
+## Kill all instances
+
+```shell
+taskkill /F /IM "chrome.exe" /T
+``` 
+ 
 ### runas admin
 
 ```shell
@@ -64,8 +71,33 @@ With that example flag, it should look like below (replacing "--disable-gpu-vsyn
 Launch Chrome like normal with the shortcut.
 ```
 
-## Kill all instances
+### Some Switches 
+ 
+| Chromium Command            	| Description                                                         	|
+|-----------------------------	|---------------------------------------------------------------------	|
+| --ash-force-desktop         	| Forces uses of the desktop version of Chrome                        	|
+| --disable-3d-apis           	| Disables 3D APIs, including WebGL and Pepper 3D                     	|
+| --disable-accelerated-video 	| Disables GPU accelerated video                                      	|
+| --disable-background-mode   	| Background apps won't continue to run when Chrome exits.            	|
+| --disable-gpu               	| Disables hardware acceleration using the GPU                        	|
+| --disable-plugins           	| Prevents all plugins from running                                   	|
+| --disable-plugins-discovery 	| Disables the discovery of missing plugins                           	|
+| --disable-preconnect        	| Disables speculative TCP/IP preconnections                          	|
+| --disable-translate         	| Disables the Google Translate feature                               	|
+| --dns-prefetch-disable      	| Disable DNS prefetching                                             	|
+| --enable-kiosk-mode         	| Kiosk Mode for Chrome OS                                            	|
+| --incognito                 	| Launches Chrome directly in Incognito private browsing mode         	|
+| --media-cache-size          	| Disk space used by media cache in bytes                             	|
+| --multi-profiles            	| Enable multiple profiles in Chrome                                  	|
+| --new-profile-management    	| Enable the new profile management in Chrome                         	|
+| --no-experiments            	| Run Chrome without experiments set in chrome://flags                	|
+| --no-pings                  	| No hyperlink auditing pings                                         	|
+| --no-referrers              	| Use Chrome without sending referrers                                	|
+| --purge-memory-button       	| Add purge memory button to Chrome                                   	|
+| --reset-variation-state     	| Change the field trials that the browser is currently signed up for 	|
+| --restore-last-session      	| Restore the last session on run                                     	|
+| --ssl-version-min           	| Specify the minimum SSL version accepted                            	|
+| --start-maximized           	| Starts the Chrome window maximized.                                 	|
+| --window-position           	| Specify the initial window position using --window-position=x,y     	|
+| --window-size               	| Specify the initial window size using --window-size=x,y             	|
 
-```shell
-taskkill /F /IM "chrome.exe" /T
-```
