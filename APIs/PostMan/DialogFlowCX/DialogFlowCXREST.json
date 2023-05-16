@@ -197,24 +197,16 @@
 		}
 	],
 	"auth": {
-		"type": "oauth2",
-		"oauth2": {
-			"scope": "https://www.googleapis.com/auth/dialogflow",
-			"accessTokenUrl": "https://accounts.google.com/o/oauth2/token",
-			"authUrl": "https://accounts.google.com/o/oauth2/auth",
-			"redirect_uri": "https://www.getpostman.com/oauth2/callback",
-			"useBrowser": false,
-			"clientSecret": "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",
-			"clientId": "827696772159-55gb3rsnccteg65nq0n8b7dihg375alr.apps.googleusercontent.com",
-			"tokenName": "RestAPIs",
-			"addTokenTo": "header"
+		"type": "bearer",
+		"bearer": {
+			"token": "ya29.a0AWY7Ckl7qGNqyEWYiKPxVq9p-WnKffQTvWMBNafNMrZHgtgJbdi6n0912_6IeLeTl9DKCjFCNDjTD22jmdmHT6Filj2xidSf-oNUYfScgr7OPYKOtWN64hQz2_vyN3anO7tGsDrMbWOz_fzZ1kIOTAnfyHM37T_wSVAnaCgYKAYkSARISFQG1tDrpV5AAlc2m8EoHyjcNj1EJpg0171"
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0d07615e-871e-4bdf-82c0-1f714f418349",
+				"id": "a43e6446-cde2-4822-888d-2fb59c194cc0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -224,7 +216,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "efab7563-7e73-4c05-8a2c-d31cb6b2ec86",
+				"id": "471fac07-3b64-4d74-b517-6e14c91bcc17",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -234,18 +226,18 @@
 	],
 	"variable": [
 		{
-			"id": "539a2ff8-cb89-4f15-b3a4-411369093a02",
+			"id": "a0bf746a-cdcd-4716-a163-1032da482215",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "17484230-c3f8-4341-94d6-4ea7632e8e51",
+			"id": "ef9a45d7-af73-4256-8aa8-df190cc00a3c",
 			"key": "flowList",
 			"value": ""
 		},
 		{
-			"id": "7421ed80-09c8-4c15-ba4e-bf1ea163761b",
+			"id": "d4f5d5ed-d0c3-4d42-bbf2-8be055dc1240",
 			"key": "flowName",
 			"value": ""
 		}
