@@ -199,6 +199,7 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": {
+			"scope": "https://www.googleapis.com/auth/plus.login",
 			"tokenName": "RestAPIs",
 			"accessTokenUrl": "https://oauth2.googleapis.com/token",
 			"authUrl": "https://accounts.google.com/o/oauth2/auth",
@@ -212,7 +213,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "90b4e850-dc03-4dea-926c-cb98b518f44e",
+				"id": "e6b556de-790e-4f3a-a016-8f9c1cf25a08",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -222,7 +223,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "de43eeb7-dafd-4498-996c-5c10f7458f15",
+				"id": "b7f74e4b-e026-4b01-af42-e96d723ec95c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -232,18 +233,18 @@
 	],
 	"variable": [
 		{
-			"id": "b7f91a06-7019-442e-986d-58306c4854ef",
+			"id": "752c3a6d-266d-4c7c-9a00-4fcfc61e6463",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "675031cc-cae9-4262-b693-16e1cc5e7c3d",
+			"id": "28e1a5d3-e4b4-4ea1-ad43-61f6503f55f3",
 			"key": "flowList",
 			"value": ""
 		},
 		{
-			"id": "16d2656e-2649-457b-93b4-44b93da99de8",
+			"id": "1612ca98-7c58-4ed8-957e-d3befad4cec5",
 			"key": "flowName",
 			"value": ""
 		}
