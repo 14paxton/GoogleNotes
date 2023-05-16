@@ -1,14 +1,13 @@
 {
 	"info": {
-		"_postman_id": "a9c3ea51-fb09-4785-b4ce-42a1bb6b0ba3",
+		"_postman_id": "6e3ea017-659d-47b4-9781-fb30c072229d",
 		"name": "DialogFlowCX",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "25515917",
-		"_collection_link": "https://vcu-chat-bot.postman.co/workspace/Team-Workspace~6e2da2ae-51b3-41df-8479-97e4d62645f7/collection/25515917-a9c3ea51-fb09-4785-b4ce-42a1bb6b0ba3?action=share&creator=25515917&source=collection_link"
+		"_exporter_id": "25515917"
 	},
 	"item": [
 		{
-			"name": "BrandonDevBot-InitiateBotEvent-UseDevEnv",
+			"name": "BrandonDevBot-InitiateBotEvent-DevelopmentEnv",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -47,6 +46,119 @@
 			"response": []
 		},
 		{
+			"name": "BrandonDevBot-DetectIntent-DevelopmentEnvironment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryInput\": {\r\n    \"text\": {\r\n      \"text\": \"how can i become a member\"\r\n    },\r\n    \"languageCode\": \"en\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/environments/ec5f3114-e5d6-497f-bf92-53723c698230/sessions/newsession101:detectIntent",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"environments",
+						"ec5f3114-e5d6-497f-bf92-53723c698230",
+						"sessions",
+						"newsession101:detectIntent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WD-7376-BrandonDevBot-become-a-member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryInput\": {\r\n    \"text\": {\r\n      \"text\": \"how can i become a member\"\r\n    },\r\n    \"languageCode\": \"en\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/sessions/fjfjfj8383833:detectIntent",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"sessions",
+						"fjfjfj8383833:detectIntent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WD-7376-BrandonDevBot-types-of-loans",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryInput\": {\r\n    \"text\": {\r\n      \"text\": \"what type of loan can i get\"\r\n    },\r\n    \"languageCode\": \"en\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/sessions/fjfjfj8383833:detectIntent",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"sessions",
+						"fjfjfj8383833:detectIntent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "BrandonDevBot-ListAllEnvironments",
 			"request": {
 				"method": "GET",
@@ -68,6 +180,34 @@
 						"agents",
 						"8ec51540-2933-43d6-aad5-355545059bfe",
 						"environments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BrandonDevBot-GetEnvironment-Develop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://content-dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/environments/ec5f3114-e5d6-497f-bf92-53723c698230",
+					"protocol": "https",
+					"host": [
+						"content-dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"environments",
+						"ec5f3114-e5d6-497f-bf92-53723c698230"
 					]
 				}
 			},
@@ -129,6 +269,84 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "BrandonDevBot-ListAllFlows",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"ListAllFlows\", function () {\r",
+							"    let fList = [];\r",
+							"    var jsonData = pm.response.json();\r",
+							"    let flows = jsonData.flows.map(u => u?.name);\r",
+							"\r",
+							"    console.log(\"flows\", flows);\r",
+							"        pm.expect(jsonData.flows.length).to.be.greaterThan(1);\r",
+							"        pm.collectionVariables.set(\"flowList\", flows);\r",
+							"    pm.globals.set(\"flowList\", flows);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/flows",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"flows"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BrandonDevBot-GetFlow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/flows/7bf60f85-19fe-48bd-ac27-2b5db2cde4de",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"flows",
+						"7bf60f85-19fe-48bd-ac27-2b5db2cde4de"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -136,7 +354,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "ya29.a0AWY7CklF8MQolWz-umfw9JbnbPHNQouWr_sK0WLaaq44pyFUROfNJtbkBNuDgcydoAUJLuEKm5YJ-q859noftvq5s5HyvapKD3jSQ92IWLQTnjkuagT0FOrTJ7_i5EXFLH1tX4cMbRDVScZz1Jwtcx_n8rjjp16R3O8vaCgYKAS4SARISFQG1tDrpznsJlLv7Nj3nrXHZGCIf1w0171",
+				"value": "{{token}}",
 				"type": "string"
 			}
 		]
@@ -159,6 +377,21 @@
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "flowList",
+			"value": ""
+		},
+		{
+			"key": "flowName",
+			"value": ""
 		}
 	]
 }

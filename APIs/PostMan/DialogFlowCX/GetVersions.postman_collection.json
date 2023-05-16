@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "60a468e9-864e-4432-a98f-85e2077aeeee",
 		"name": "GetVersions",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25515917"
 	},
 	"item": [
 		{
@@ -11,7 +12,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c41ea59d-7863-4d56-880b-480590ba676c",
 						"exec": [
 							"\r",
 							"\r",
@@ -31,14 +31,28 @@
 					}
 				}
 			],
-			"_postman_id": "31ae5408-f7c3-42f6-b62a-0c64793c957c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/flows"
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/flows",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"projects",
+						"vcu-virtual-assistant-bot",
+						"locations",
+						"global",
+						"agents",
+						"8ec51540-2933-43d6-aad5-355545059bfe",
+						"flows"
+					]
+				}
 			},
 			"response": []
 		},
@@ -48,7 +62,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ddbb3d7a-4404-4ecc-a726-4b8a70b87378",
 						"exec": [
 							"const flowList = pm.collectionVariables.get(\"flowList\");\r",
 							"const flowName = pm.variables.get(\"flowName\");\r",
@@ -84,7 +97,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "483ed9a4-e3c7-4f34-b2a0-85dac76286a6",
 						"exec": [
 							"const flowList = pm.collectionVariables.get(\"flowList\");\r",
 							"\r",
@@ -108,29 +120,41 @@
 					}
 				}
 			],
-			"_postman_id": "5a8e06d9-864b-4365-8e22-cd6ecf04ad09",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "https://dialogflow.googleapis.com/v3beta1/{{flowName}}/versions"
+				"url": {
+					"raw": "https://dialogflow.googleapis.com/v3beta1/{{flowName}}/versions",
+					"protocol": "https",
+					"host": [
+						"dialogflow",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3beta1",
+						"{{flowName}}",
+						"versions"
+					]
+				}
 			},
 			"response": []
 		}
 	],
 	"auth": {
 		"type": "bearer",
-		"bearer": {
-			"token": "{{token}}"
-		}
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "94e118ab-b70d-4dca-9a7a-887c9388bbc4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -140,7 +164,6 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "da9026d2-95d9-4e4c-9a25-a6cefa322a87",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -150,34 +173,26 @@
 	],
 	"variable": [
 		{
-			"id": "8ef29f6b-9ffd-4042-8373-4f72de073ad4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03de8ff6-b463-4595-9e85-a73ce0dc79c6",
 			"key": "flowList",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "0a123e5f-1804-4146-bfdf-bac8c20883f8",
 			"key": "flowName",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "d72d0ad6-ff10-45b5-85b8-cdb9b7aba5b3",
 			"key": "flowVersionMap",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7e797f0a-c5b1-4923-96c1-15387a3206bd",
 			"key": "finalList",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
