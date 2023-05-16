@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "BrandonDevBot-InitiateBotEvent-DevelopmentEnv",
-			"_postman_id": "4ae69594-1998-4d27-a150-b9aef0973dbe",
+			"id": "4ae69594-1998-4d27-a150-b9aef0973dbe",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -29,7 +29,7 @@
 		},
 		{
 			"name": "BrandonDevBot-DetectIntent-DevelopmentEnvironment",
-			"_postman_id": "7d8e040e-61d4-42e1-80f4-1a2982f455cd",
+			"id": "7d8e040e-61d4-42e1-80f4-1a2982f455cd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -51,7 +51,7 @@
 		},
 		{
 			"name": "WD-7376-BrandonDevBot-become-a-member",
-			"_postman_id": "c3861c9a-7887-44cc-81ac-1e7740f386cd",
+			"id": "c3861c9a-7887-44cc-81ac-1e7740f386cd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -73,7 +73,7 @@
 		},
 		{
 			"name": "WD-7376-BrandonDevBot-types-of-loans",
-			"_postman_id": "18b18b73-d214-45c6-8c7e-6c706b2a312b",
+			"id": "18b18b73-d214-45c6-8c7e-6c706b2a312b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -95,7 +95,7 @@
 		},
 		{
 			"name": "BrandonDevBot-ListAllEnvironments",
-			"_postman_id": "032f808d-9a48-44f1-bc00-80cc23116c3c",
+			"id": "032f808d-9a48-44f1-bc00-80cc23116c3c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -108,7 +108,7 @@
 		},
 		{
 			"name": "BrandonDevBot-GetEnvironment-Develop",
-			"_postman_id": "564df425-ea2a-4627-99f4-62dceeb31c72",
+			"id": "564df425-ea2a-4627-99f4-62dceeb31c72",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -121,7 +121,7 @@
 		},
 		{
 			"name": "BrandonDevBot-ListAllVersions-DefaultFlow",
-			"_postman_id": "bc13e777-cb55-43c6-a0d3-3dd3b5970c68",
+			"id": "bc13e777-cb55-43c6-a0d3-3dd3b5970c68",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -134,7 +134,7 @@
 		},
 		{
 			"name": "BrandonDevBot-ListAllPagesForFlow-GeneralFlow",
-			"_postman_id": "a5c038cb-bc17-469e-9d63-37c504bada91",
+			"id": "a5c038cb-bc17-469e-9d63-37c504bada91",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -171,7 +171,7 @@
 					}
 				}
 			],
-			"_postman_id": "0aa78e2f-765b-4b3b-9cff-41db8e1a75bf",
+			"id": "0aa78e2f-765b-4b3b-9cff-41db8e1a75bf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -184,7 +184,7 @@
 		},
 		{
 			"name": "BrandonDevBot-GetFlow",
-			"_postman_id": "9ac84453-97f1-4c3b-b060-92f566045e56",
+			"id": "9ac84453-97f1-4c3b-b060-92f566045e56",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -197,16 +197,22 @@
 		}
 	],
 	"auth": {
-		"type": "bearer",
-		"bearer": {
-			"token": "{{token}}"
+		"type": "oauth2",
+		"oauth2": {
+			"tokenName": "RestAPIs",
+			"accessTokenUrl": "https://oauth2.googleapis.com/token",
+			"authUrl": "https://accounts.google.com/o/oauth2/auth",
+			"clientId": "{{clientid}}",
+			"clientSecret": "{{clientsecret}}",
+			"useBrowser": true,
+			"addTokenTo": "header"
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "692e2509-7e28-497b-af7c-f5b3f78292d1",
+				"id": "90b4e850-dc03-4dea-926c-cb98b518f44e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -216,7 +222,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "204cc2b4-aea5-4eba-a33e-90195a559e9d",
+				"id": "de43eeb7-dafd-4498-996c-5c10f7458f15",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -226,22 +232,20 @@
 	],
 	"variable": [
 		{
-			"id": "188e45ba-966a-4c22-9819-4b3a5de8810e",
+			"id": "b7f91a06-7019-442e-986d-58306c4854ef",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a2790eeb-5994-4a01-ac4d-cf60c770fdc0",
+			"id": "675031cc-cae9-4262-b693-16e1cc5e7c3d",
 			"key": "flowList",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "1f205b24-07fc-4546-b32c-fc1b6c61ebfe",
+			"id": "16d2656e-2649-457b-93b4-44b93da99de8",
 			"key": "flowName",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
