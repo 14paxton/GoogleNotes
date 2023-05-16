@@ -199,13 +199,14 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": {
+			"redirect_uri": "https://oauth.pstmn.io/v1/browser-callback",
+			"useBrowser": false,
+			"clientSecret": "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",
+			"clientId": "827696772159-55gb3rsnccteg65nq0n8b7dihg375alr.apps.googleusercontent.com",
 			"scope": "/auth/userinfo.email , /auth/userinfo.profile, /auth/iam.test, ",
 			"tokenName": "RestAPIs",
 			"accessTokenUrl": "https://oauth2.googleapis.com/token",
 			"authUrl": "https://accounts.google.com/o/oauth2/auth",
-			"clientId": "{{clientid}}",
-			"clientSecret": "{{clientsecret}}",
-			"useBrowser": true,
 			"addTokenTo": "header"
 		}
 	},
@@ -213,7 +214,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c0e0a512-64b9-4e01-b937-3ae7cee671f4",
+				"id": "29fb7a3b-0d03-43f5-8836-978e528e25a3",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -223,7 +224,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "bdce95f4-26ba-46e2-b0c8-b392439ccf9f",
+				"id": "59df4983-6ecd-4958-8d2b-b99060c98fb8",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -233,18 +234,18 @@
 	],
 	"variable": [
 		{
-			"id": "a9f336db-f5c9-4448-b0ad-0234bfbb85b2",
+			"id": "7f88d4c3-d9ec-4657-9aa1-949a51addb5b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d88e6965-a1ea-43de-a1fb-64b9ca15d567",
+			"id": "f3a2c4e0-a676-495d-8917-13c3fd47f59c",
 			"key": "flowList",
 			"value": ""
 		},
 		{
-			"id": "82b3627d-7cfc-4e10-8783-3c049a0829c1",
+			"id": "b804a36a-e384-45ff-9fb5-d2a842f85039",
 			"key": "flowName",
 			"value": ""
 		}
