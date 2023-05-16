@@ -199,9 +199,9 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": {
+			"useBrowser": true,
 			"scope": "https://www.googleapis.com/auth/userinfo.email",
 			"redirect_uri": "https://oauth.pstmn.io/v1/browser-callback",
-			"useBrowser": false,
 			"clientSecret": "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",
 			"clientId": "827696772159-55gb3rsnccteg65nq0n8b7dihg375alr.apps.googleusercontent.com",
 			"tokenName": "RestAPIs",
@@ -214,7 +214,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1f6c4548-0063-49e6-9787-81f37aedeaf0",
+				"id": "32ab091d-9bd1-4844-8e93-7ce019f5e1d7",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -224,7 +224,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "640474c1-c5f7-4f48-a4a8-c8889e1305be",
+				"id": "958ba141-c389-4992-b211-d26e3ebbb214",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -234,18 +234,18 @@
 	],
 	"variable": [
 		{
-			"id": "5a4dba16-bf69-4b56-abb3-a09a29d68a8f",
+			"id": "73e254e0-7660-49cc-b79e-41da8c209b1a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "843335d7-5faa-4d4f-90e5-12129d4f7f32",
+			"id": "26e25ce0-b356-4b82-b937-91f364a0c438",
 			"key": "flowList",
 			"value": ""
 		},
 		{
-			"id": "bdd3f2b9-dca6-476d-9c56-a4794f1d5cca",
+			"id": "35fe0f66-d8ca-4d6f-a48d-f9013140cbe2",
 			"key": "flowName",
 			"value": ""
 		}
