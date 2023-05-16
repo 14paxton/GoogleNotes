@@ -239,18 +239,18 @@
 	],
 	"variable": [
 		{
-			"id": "51724bec-acdb-47db-b6df-424ee1da95bf",
+			"id": "9eafe054-5b9d-4d6a-862d-5e323d5a78cf",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f0b20a5-a817-4358-8e5d-a42f4a9ca018",
+			"id": "671db2fc-de6d-4eb9-8f67-4b11d757f30b",
 			"key": "flowList",
 			"value": ""
 		},
 		{
-			"id": "d7235e61-27d2-4c6c-a4f2-45ff95abd776",
+			"id": "17460c0d-93ea-4626-8208-7ea3d01863a4",
 			"key": "flowName",
 			"value": ""
 		}
