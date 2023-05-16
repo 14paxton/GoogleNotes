@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "60a468e9-864e-4432-a98f-85e2077aeeee",
+		"name": "GetVersions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1-BrandonDevBot-ListAllFlows",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c41ea59d-7863-4d56-880b-480590ba676c",
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"ListAllFlows\", function () {\r",
+							"    let fList = [];\r",
+							"    var jsonData = pm.response.json();\r",
+							"    let flows = jsonData.flows.map(u => u?.name);\r",
+							"\r",
+							"    console.log(\"flows\", flows);\r",
+							"        pm.expect(jsonData.flows.length).to.be.greaterThan(1);\r",
+							"        pm.collectionVariables.set(\"flowList\", flows);\r",
+							"    pm.globals.set(\"flowList\", flows);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "31ae5408-f7c3-42f6-b62a-0c64793c957c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dialogflow.googleapis.com/v3beta1/projects/vcu-virtual-assistant-bot/locations/global/agents/8ec51540-2933-43d6-aad5-355545059bfe/flows"
+			},
+			"response": []
+		},
+		{
+			"name": "2-BrandonDevBot-GetAllVersions-AllFlows",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ddbb3d7a-4404-4ecc-a726-4b8a70b87378",
+						"exec": [
+							"const flowList = pm.collectionVariables.get(\"flowList\");\r",
+							"const flowName = pm.variables.get(\"flowName\");\r",
+							"const flowVersionMap = pm.collectionVariables.get(\"flowVersionMap\");\r",
+							"\r",
+							"if (flowList && flowList.length > 0){\r",
+							"    postman.setNextRequest(\"2-BrandonDevBot-GetAllVersions-AllFlows\");\r",
+							"} else {\r",
+							"    const jsonFlowVersions = JSON.stringify(flowVersionMap);\r",
+							"    const finalList = JSON.parse(jsonFlowVersions);\r",
+							"    console.log(\"flowVersionMap\", finalList);\r",
+							"\r",
+							"    pm.collectionVariables.set(\"finalList\", jsonFlowVersions)\r",
+							"    pm.variables.unset(\"flowName\")\r",
+							"    pm.variables.unset(\"flowVersionMap\")\r",
+							"    pm.variables.unset(\"flowList\");\r",
+							"    \r",
+							"    postman.setNextRequest(null);\r",
+							"}\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const versionList = pm.response.json().versions;\r",
+							"    flowVersionMap[flowName] = versionList\r",
+							"    pm.variables.set(\"flowVersionMap\", flowVersionMap);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "483ed9a4-e3c7-4f34-b2a0-85dac76286a6",
+						"exec": [
+							"const flowList = pm.collectionVariables.get(\"flowList\");\r",
+							"\r",
+							"if(flowList || flowList.length > 0) {\r",
+							"    let currentFlowName = flowList.shift();\r",
+							"    pm.variables.set(\"flowName\", currentFlowName);\r",
+							"    pm.collectionVariables.set(\"flowList\", flowList)\r",
+							"\r",
+							"    const flowVersionMap =  pm.variables.get(\"flowVersionMap\") ? pm.variables.get(\"flowVersionMap\") : new Map();\r",
+							"    flowVersionMap[currentFlowName] = \"\";\r",
+							"\r",
+							"    pm.collectionVariables.set(\"flowVersionMap\", flowVersionMap);\r",
+							"}\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "5a8e06d9-864b-4365-8e22-cd6ecf04ad09",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dialogflow.googleapis.com/v3beta1/{{flowName}}/versions"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{token}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "94e118ab-b70d-4dca-9a7a-887c9388bbc4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "da9026d2-95d9-4e4c-9a25-a6cefa322a87",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "9e0ec8d4-f33e-4d66-8052-7d9468d2dcb2",
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "f1b106d6-6601-4888-b50b-e4c7e5c47732",
+			"key": "flowList",
+			"value": ""
+		},
+		{
+			"id": "95e249f8-e5ba-4cb3-8455-5cd9d7705b48",
+			"key": "flowName",
+			"value": ""
+		},
+		{
+			"id": "f38c8cea-32d6-4f08-aee5-e903731df7b7",
+			"key": "flowVersionMap",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "d3b78d46-1877-4373-81de-71ad3316e3e5",
+			"key": "finalList",
+			"value": ""
+		}
+	]
+}
