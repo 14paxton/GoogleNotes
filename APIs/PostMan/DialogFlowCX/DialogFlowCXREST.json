@@ -173,7 +173,7 @@
 							"    var jsonData = pm.response.json();\r",
 							"    let flows = new Map(jsonData.flows.map(u => [u?.displayName , u?.name]));\r",
 							"\r",
-							"    console.log(\"flows\", flows);\r",
+							"    console.log(\"flowMap\", flows);\r",
 							"        pm.expect(jsonData.flows.length).to.be.greaterThan(1);\r",
 							"        pm.collectionVariables.set(\"flowList\", flows);\r",
 							"    pm.globals.set(\"flowList\", flows);\r",
@@ -239,18 +239,18 @@
 	],
 	"variable": [
 		{
-			"id": "a3374580-5b39-4909-b5b1-df29df5f2ef3",
+			"id": "ded42e16-7004-476b-a450-69f12fb17147",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "875d46f0-0c63-4d12-865c-8e3e6e00b7c9",
+			"id": "ba5ba7a4-3d72-4694-b248-262ad1b09665",
 			"key": "flowList",
 			"value": ""
 		},
 		{
-			"id": "777132ff-1ab0-4f5f-9183-59b95e8a4cf9",
+			"id": "70ae26fc-03b6-46ed-bc9c-b8f540d5de87",
 			"key": "flowName",
 			"value": ""
 		}
