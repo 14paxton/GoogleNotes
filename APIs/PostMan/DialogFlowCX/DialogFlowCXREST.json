@@ -212,14 +212,14 @@
 	"auth": {
 		"type": "bearer",
 		"bearer": {
-			"token": "ya29.a0AWY7Ckl7qGNqyEWYiKPxVq9p-WnKffQTvWMBNafNMrZHgtgJbdi6n0912_6IeLeTl9DKCjFCNDjTD22jmdmHT6Filj2xidSf-oNUYfScgr7OPYKOtWN64hQz2_vyN3anO7tGsDrMbWOz_fzZ1kIOTAnfyHM37T_wSVAnaCgYKAYkSARISFQG1tDrpV5AAlc2m8EoHyjcNj1EJpg0171"
+			"token": "{{token}}"
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "faade0a2-399c-488b-8e16-4d7da1169c83",
+				"id": "a7556b9c-2676-42d5-8488-ee2abb87130f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -229,7 +229,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "66da141d-812c-4537-b90a-bfde7c4260f9",
+				"id": "31922172-1853-424b-8137-471cc93fa2b7",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -239,18 +239,18 @@
 	],
 	"variable": [
 		{
-			"id": "552c1860-deab-424a-bc12-4edd7d6e9b9f",
+			"id": "feef2428-6240-4cd2-b965-067bbd7ababc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "88ac7f51-23a0-448a-a306-ce3522b0eea0",
+			"id": "5fd3e98d-9782-4fe4-a665-078083ff2a55",
 			"key": "flowList",
 			"value": ""
 		},
 		{
-			"id": "9c078c9a-0df9-40c3-a97a-cca48729260e",
+			"id": "92a5a4b4-f1b8-4cdb-b1da-0539b20fadee",
 			"key": "flowName",
 			"value": ""
 		}
