@@ -1,9 +1,43 @@
 # [Chromium Docs](https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md)
 
-> get profile info
+## URIs of interest
+
+- get profile info
 ```
 chrome://version/
 ```
+
+- flags
+```
+chrome://flags/
+```
+
+- url list
+```
+chrome://chrome-urls/
+```
+```
+chrome://about/
+```
+
+- ?
+```
+chrome://proximity-auth
+```
+
+### browser apps
+
+paint app that you can use to draw with.
+
+https://canvas.apps.chrome/
+
+edit: Using the Site: query on google there's two others.
+
+https://screencast.apps.chrome/ is a screen recording app that only works on Chrome OS. Sort of like Windows step recorder.
+
+https://cursive.apps.chrome is a note taking app that can use handwriting.
+
+---
 
 # Extensions 
 ## File Locations 
