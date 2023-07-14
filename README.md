@@ -65,7 +65,24 @@ Find your copied directory and click Open.
 
 # [CLI](https://www.chromium.org/developers/how-tos/run-chromium-with-flags/)
 
-## Open
+## MacOS
+
+To run Chrome from the terminal on Mac, you can use the following command:
+
+`open -a "Google Chrome"`
+
+This will open a new instance of Chrome.
+
+You can also use the following command to open a specific URL in Chrome:
+
+`open -a "Google Chrome" "https://www.google.com"`
+
+This will open the Google homepage in Chrome.
+
+
+## Windows
+
+### Open
 
 ```shell
 start chrome
@@ -77,7 +94,7 @@ start chrome
  start chrome --app="http://www.youtube.com/"
 ```
  
-## Kill all instances
+### Kill all instances
 
 ```shell
 taskkill /F /IM "chrome.exe" /T
