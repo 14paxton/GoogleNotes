@@ -1,3 +1,34 @@
+---
+title: Browser
+permalink: GoogleNotes/Browser
+category:  GoogleNotes
+parent:   GoogleNotes
+layout: default
+has_children: false
+share: true
+shortRepo:
+  - googlenotes
+  - default          
+---
+
+
+<br/>          
+
+<details markdown="block">                
+<summary>                
+Table of contents                
+</summary>                
+{: .text-delta }                
+1. TOC                
+{:toc}                
+</details>                
+
+<br/>                
+
+***                
+
+<br/>
+
 # [Chromium Docs](https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md)
 
 ## URIs of interest
@@ -165,4 +196,3 @@ Launch Chrome like normal with the shortcut.
 | --start-maximized           	 | Starts the Chrome window maximized.                                 	 |
 | --window-position           	 | Specify the initial window position using --window-position=x,y     	 |
 | --window-size               	 | Specify the initial window size using --window-size=x,y             	 |
-

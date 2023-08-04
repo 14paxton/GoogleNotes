@@ -1,3 +1,34 @@
+---
+title: Functions
+permalink: GoogleNotes/Functions
+category:  GoogleNotes
+parent:   GoogleNotes
+layout: default
+has_children: false
+share: true
+shortRepo:
+  - googlenotes
+  - default          
+---
+
+
+<br/>          
+
+<details markdown="block">                
+<summary>                
+Table of contents                
+</summary>                
+{: .text-delta }                
+1. TOC                
+{:toc}                
+</details>                
+
+<br/>                
+
+***                
+
+<br/>
+
 # Quick Scripts
 
 ## [Tips and Tricks](https://cloud.google.com/functions/docs/bestpractices/tips?_ga=2.165287036.-213526365.1679410207#functions-tips-scopes-csharp)

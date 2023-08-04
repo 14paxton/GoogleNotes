@@ -1,36 +1,63 @@
+---
+title: APIs
+permalink: GoogleNotes/APIs
+category:  GoogleNotes
+parent:   GoogleNotes
+layout: default
+has_children: false
+share: true
+shortRepo:
+  - googlenotes
+  - default          
+---
+
+
+<br/>          
+
+<details markdown="block">                
+<summary>                
+Table of contents                
+</summary>                
+{: .text-delta }                
+1. TOC                
+{:toc}                
+</details>                
+
+<br/>                
+
+***                
+
+<br/>
+
 # Google and ASP/.Net API Doc links
 
-> Google
+## Google
 
 https://cloud.google.com/apis/docs/overview
 
 https://googleapis.dev/dotnet/Google.Apis.Auth/latest/
 
-
-
-> > Dev improvements
+## Dev improvements
 
 [Dev improvements](https://google.aip.dev/client-libraries)
 
+## .Net
 
-
-> .Net
-
-> Cloud SDKs
+### Cloud SDKs
 
 https://cloud.google.com/dotnet/docs/reference
 
-> APIs
+### APIs
 
 https://developers.google.com/api-client-library/dotnet/apis
 
-## [Available APIs](https://cloud.google.com/apis/docs/cloud-client-libraries)
+#### [Available APIs](https://cloud.google.com/apis/docs/cloud-client-libraries)
 
-> [API Explorer](https://developers.google.com/apis-explorer)
->
-> [Test API calls in GoogleCloud console enviroment](https://cloud.google.com/logging/docs/api)
+##### [API Explorer](https://developers.google.com/apis-explorer)
 
-### [Logging](https://cloud.google.com/logging/docs/reference/api-overview)
+##### [Test API calls in GoogleCloud console enviroment](https://cloud.google.com/logging/docs/api)
+
+# [Logging](https://cloud.google.com/logging/docs/reference/api-overview)
 
 ***
 
@@ -50,7 +77,7 @@ https://developers.google.com/api-client-library/dotnet/apis
 
 ***
 
-### [Google Client Libraries Used to Access Google APIs](https://developers.google.com/api-client-library)
+## [Google Client Libraries Used to Access Google APIs](https://developers.google.com/api-client-library)
 
 ### Resources
 

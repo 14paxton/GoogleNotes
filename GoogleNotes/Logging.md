@@ -1,3 +1,34 @@
+---
+title: Logging
+permalink: GoogleNotes/Logging
+category:  GoogleNotes
+parent:   GoogleNotes
+layout: default
+has_children: false
+share: true
+shortRepo:
+  - googlenotes
+  - default          
+---
+
+
+<br/>          
+
+<details markdown="block">                
+<summary>                
+Table of contents                
+</summary>                
+{: .text-delta }                
+1. TOC                
+{:toc}                
+</details>                
+
+<br/>                
+
+***                
+
+<br/>
+
 # [Logging](https://cloud.google.com/logging/docs/)
 
 > [Logs Explorer](https://console.cloud.google.com/logs/query;query=resource.labels.project_id%3D%22your-project-name%22;timeRange=2023-01-04T14:14:48.965Z%2F2023-02-02T15:14:48.965Z;summaryFields=:false:32:beginning;cursorTimestamp=2023-02-02T15:14:48.964204Z?project=your-project-name)
@@ -96,8 +127,9 @@ gcloud gcloud logging read --freshness="50d"
 >> Return entries that are not older than this value. Works only with DESC ordering and filters without a timestamp. See $ gcloud topic datetimes for information on duration formats.
 
 ### **__<span style="color:red">
+
 5) [Can test api calls and parameters with API explorer](https://cloud.google.com/logging/docs/reference/v2/rest/v2/entries/list?apix_params=%7B%22resource%22%3A%7B%22resourceNames%22%3A%5B%22projects%2Fyour-project-name%22%5D%2C%22filter%22%3A%22resource.type%3Dglobal%22%2C%22orderBy%22%3A%22timestamp%20desc%22%7D%7D) </span>
-__**
+   __**
 
 - [API Permissions List](https://cloud.google.com/logging/docs/access-control#api-permissions)
 
@@ -183,4 +215,3 @@ logs routed to BigQuery, see [View logs routed to BigQuery](https://cloud.google
 
 Cloud Storage buckets: Provides inexpensive, long-term storage of log data in Cloud Storage. Log entries are stored as JSON files. For information about viewing these logs, how they are organized, and
 how late-arriving logs are handled, see [View logs routed to Cloud Storage](https://cloud.google.com/logging/docs/export/storage).
-
